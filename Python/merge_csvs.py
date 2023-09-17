@@ -8,7 +8,7 @@ from pathlib import Path
 
 def merge_csvs_in_dir(csv_dir, recursive=False, pattern=None, save=True, overwrite=False):
 
-    if not os.path.isdir(csv_dir):
+    if not os.path.exists(csv_dir):
         logging.warning(f"'{csv_dir}' does not exist!")
         return
 
