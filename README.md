@@ -1,7 +1,7 @@
 Merge CSVs
 ================================
 
-Contains some simple csv merging stuff using pandas and pathlib.
+Contains some simple csv merging stuff using the `pandas` and `pathlib` libraries.
 
 ---
 
