@@ -6,7 +6,7 @@ import logging
 from pathlib import Path
 
 
-def merge_csvs_in_dir(csv_dir, recursive=False, pattern=None, save=True, overwrite=False):
+def merge_csvs_in_dir(csv_dir, recursive=False, pattern=None, save=True):
 
     if not os.path.exists(csv_dir):
         logging.warning(f"'{csv_dir}' does not exist!")
@@ -37,4 +37,4 @@ def merge_csvs_in_dir(csv_dir, recursive=False, pattern=None, save=True, overwri
 
 if __name__ == "__main__":
     test_csv_dir = Path.cwd().parent.joinpath("test_csvs")
-    merged_test_csv = merge_csvs_in_dir(test_csv_dir, overwrite=True)
+    merged_test_csv = merge_csvs_in_dir(test_csv_dir)
